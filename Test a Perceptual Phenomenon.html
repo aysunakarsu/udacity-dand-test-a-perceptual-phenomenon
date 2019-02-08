@@ -11812,6 +11812,9 @@ Dependent variable is measured time to name the ink colors in words.</p>
 <p>μi: Population mean of measured time of naming incongruent words</p>
 <p>H0: μc - μi = 0</p>
 <p>H1: μc - μi &lt; 0</p>
+<p>Since the dataset has few samples, less than 30, using a t-test is appropriate.</p>
+<p>Based on the measured time of naming congruent and incongruent set of words, by the t-test, the difference between the two means of the population symbolized by μc for the congruent words and by μi by incongruent can be infered.</p>
+<p>To test them, we will run a one-tailed t-test using a confidence level of 95%, α 0.05.</p>
 
 </div>
 </div>
@@ -12118,7 +12121,7 @@ Dependent variable is measured time to name the ink colors in words.</p>
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#T-critical  value is obtained from t-Table and when considering a one-tailed 95% confident level, α=0.05 </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#T-critical  value is obtained from t-Table and when considering a one-tailed 95% confident level α=0.05 </span>
 <span class="n">stats</span><span class="o">.</span><span class="n">t</span><span class="o">.</span><span class="n">ppf</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="mf">0.95</span><span class="p">,</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">stroop_df</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span> 
 </pre></div>
 
